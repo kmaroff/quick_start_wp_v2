@@ -21,6 +21,17 @@
     display: table
     clear: both
 
+@mixin flex-reset
+  &:after
+    content: ""
+    flex: auto
+
+@mixin absolute-center
+	margin-left: auto
+	margin-right: auto
+	left: 0
+	right: 0
+
 @mixin container()
   width: 320px
   margin: 0 auto
